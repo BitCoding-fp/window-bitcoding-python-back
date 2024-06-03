@@ -54,6 +54,13 @@ cd vcpkg
 # vcpkg 환경변수 설정
 setx PATH "%PATH%;C:\path\to\vcpkg"
 
+# Boost 설치
+vcpkg install boost
+
+# CMake 명령에 툴체인 파일 지정
+cmake -DCMAKE_TOOLCHAIN_FILE=C:/path/to/vcpkg/scripts/buildsystems/vcpkg.cmake ..
+
+
 
 # arrow-cpp 빌드 및 설치
 # git clone https://github.com/apache/arrow.git
