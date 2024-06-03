@@ -30,21 +30,21 @@ pip install -r requirementswin.txt
 
 ```
 # conda 설치
-# conda install -c conda-forge aws-c-auth aws-c-cal aws-c-common aws-c-compression aws-c-event-stream aws-c-http aws-c-io aws-c-mqtt aws-c-s3 aws-c-sdkutils aws-checksums aws-crt-cpp aws-sdk-cpp bzip2 c-ares lz4-c openjpeg re2 snappy zeromq zstd
+conda install -c conda-forge aws-c-auth aws-c-cal aws-c-common aws-c-compression aws-c-event-stream aws-c-http aws-c-io aws-c-mqtt aws-c-s3 aws-c-sdkutils aws-checksums aws-crt-cpp aws-sdk-cpp bzip2 c-ares lz4-c openjpeg re2 snappy zeromq zstd
 
 
 # pip 설치
-# pip install aiohttp==3.9.3 aiosignal==1.2.0 beautifulsoup4==4.12.2
+pip install aiohttp==3.9.3 aiosignal==1.2.0 beautifulsoup4==4.12.2
 
 
 # abseil-cpp 빌드 및 설치
-# git clone https://github.com/abseil/abseil-cpp.git
-# cd abseil-cpp
-# mkdir build
-# cd build
-# cmake ..
-# cmake --build . --config Release
-# cmake --install . --config Release
+git clone https://github.com/abseil/abseil-cpp.git
+cd abseil-cpp
+mkdir build
+cd build
+cmake ..
+cmake --build . --config Release
+cmake --install . --config Release
 
 # vcpkg 빌드 및 설치
 git clone https://github.com/Microsoft/vcpkg.git
@@ -60,30 +60,28 @@ vcpkg install boost
 # CMake 명령에 툴체인 파일 지정
 cmake -DCMAKE_TOOLCHAIN_FILE=C:/path/to/vcpkg/scripts/buildsystems/vcpkg.cmake ..
 
-
-
 # arrow-cpp 빌드 및 설치
-# git clone https://github.com/apache/arrow.git
-# cd arrow/cpp
-# mkdir build
-# cd build
-# cmake ..
-# cmake --build . --config Release
-# cmake --install . --config Release
+git clone https://github.com/apache/arrow.git
+cd arrow/cpp
+mkdir build
+cd build
+cmake ..
+cmake --build . --config Release
+cmake --install . --config Release
 
 
 # ORC 빌드 및 설치
-# git clone https://github.com/apache/orc.git
-# cd orc
-# mkdir build
-# cd build
-# cmake ..
-# cmake --build . --config Release
-# cmake --install . --config Release
+git clone https://github.com/apache/orc.git
+cd orc
+mkdir build
+cd build
+cmake ..
+cmake --build . --config Release
+cmake --install . --config Release
 
 
 # 설치 후 bson호환성 오류 해결 - 일부 삭제 후 재설치
-# pip uninstall bson
-# pip install pymongo
+pip uninstall bson
+pip install pymongo
 
 ```
