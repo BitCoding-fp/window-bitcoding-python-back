@@ -1,0 +1,7 @@
+.env
+**/__pycache__/*
+my_llm_cache.db
+.json
+.ipynb_checkpoints/*
+.ipynb_checkpoints
+/.ipynb_checkpoints
