@@ -46,6 +46,14 @@ pip install -r requirementswin.txt
 # cmake --build . --config Release
 # cmake --install . --config Release
 
+# vcpkg 빌드 및 설치
+git clone https://github.com/Microsoft/vcpkg.git
+cd vcpkg
+.\bootstrap-vcpkg.bat
+
+# vcpkg 환경변수 설정
+setx PATH "%PATH%;C:\path\to\vcpkg"
+
 
 # arrow-cpp 빌드 및 설치
 # git clone https://github.com/apache/arrow.git
